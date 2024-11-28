@@ -13,9 +13,9 @@ const corsOptions = {
   origin: function (origin, callback) {
     // Allow requests with no origin (like mobile apps or curl requests)
     const allowedOrigins = [
-      process.env.FRONTEND_URL,
       'http://localhost:5173', // Your local frontend
       'https://incisivesolutions.in', // Production frontend
+      'https://www.incisivesolutions.in',
       undefined, // for postman or server-to-server requests
     ];
 
